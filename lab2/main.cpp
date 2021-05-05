@@ -1,18 +1,3 @@
-/* 
-Prosze napisac klase ComplexNumber, ktora reprezentuje liczbę zespoloną.
-Metody post- i preinkrementacji zwiekszaja o 1 tylko czesc rzeczywista liczby zespolonej.
-
-Iloczyn liczb zespolonych nalezy obliczyc korzystajac ze wzoru:
-(A1 + i*A2)*(B1 + i*B2) = A1*B1 - A2*B2 + i*(A1*B2 + A2*B1)
-
-Porownujac dwie liczby zespolone prosze porownac ich moduły, czyli wartości
-R = re*re + im*im.
-
-UWAGA!!!
-Po odkomentowaniu #DEFINE ERROR, powinien pojawić się błąd kompilacji dokladnie w tej linii. Brak blędu oznacza -2 punkty.
-
-*/
-
 #include <iostream>
 #include "ComplexNumber.h"
 
@@ -58,22 +43,3 @@ int main ()
   
   return 0;
 }
-/*
-Z1: 2 + 8i
-Z2: 1 + 16i
-Z3: 3
-
-*** Dodawanie ***
-S1: 3 + 24i
-S2: 1 + 2i
-S1: -126 + 40i  S2: -126 + 40i  S2Ref: -126 + 40i
-
-*** S2*=3 ***
-S1: -126 + 40i  S2: -378 + 120i S2Ref: -378 + 120i
-S1: -125 + 40i  S2: -377 + 120i S3: 129 + -41i
-
-*** Zmniejszamy IM: S3[IM]-=3 ***
-S3: 129 + -44i
-*** Zmniejszamy RE: S3[RE]-=5 ***
-S3: 124 + -44i
-*/
