@@ -1,11 +1,3 @@
-/*
-  Celem zadania jest przećwiczenie funkcji szablonowych. 
-  Chcemy utworzyć klasę Factory, która gwarantuje, że mamy możliwość wytworzenia identycznych obiektów jak podany prototyp.
-  Sama klasa Factory nie jest szablonowa, tylko jej funkcje są szablonowe.
-  W rozwiązaniu należy wykorzystać statyczne składniki w funkcji i to, że każda instancja szablonu to odrębna funkcja.
-  Dodatkowo potrzebna jest jeszcze prosta klasa Car. Proszę zawrzeć w niej tylko niezbędne funkcje.
- */
-
 #include <iostream>
 #include <string>
 
@@ -41,18 +33,3 @@ int main() {
 	std::cout << f1.manufacture<double>() << std::endl;
 	std::cout << f1.manufacture<float>() << std::endl;
 }
-
-/* wynik
-7
-3.14
-3.14
-==== Zmiana int i wymiana fabryki ====
-9
-3.14
-Car: Porsche
-Car: Porsche
-Car: Ferrari
-No prototype for this type: 0
-10.4
-3.14
- */
